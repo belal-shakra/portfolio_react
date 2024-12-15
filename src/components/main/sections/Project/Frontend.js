@@ -4,11 +4,22 @@ import Zomato from "../../../../assets/imgs/zomato-logo.jpg";
 import Feane from "../../../../assets/imgs/feane.png";
 import Title from "./Title";
 
-export default function Frontend() {
+export default function Frontend(projects) {
+  // let cards = projects.projects.map(function (project) {
+  //   return (
+  //     <Card
+  //       title={project.title}
+  //       category={project.category}
+  //       link={project.link}
+  //     >
+  //       <img src={Airbnb} alt="airbnb" />
+  //     </Card>
+  //   );
+  // });
+
   return (
     <>
       <Title title="Front-End" />
-
 
       <div className="card-container">
         <Card

@@ -1,7 +1,9 @@
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 
-export default function Project() {
+export default function Project(projects) {
+
+  console.log(projects.projects);
   return (
     <section className="projects" id="projects">
       <div className="container">
@@ -10,11 +12,11 @@ export default function Project() {
         </div>
         <div className="container">
           <div className="cards">
-            <Frontend />
+            <Frontend projects={projects.projects.FrontEnd} />
           </div>
 
           <div className="cards">
-            <Backend />
+            <Backend projects={projects.projects.BackEnd} />
           </div>
         </div>
       </div>

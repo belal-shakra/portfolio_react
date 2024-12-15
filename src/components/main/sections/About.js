@@ -1,18 +1,13 @@
 import AboutImage from "../../../assets/imgs/me-2021.jpg";
 
-export default function About() {
+export default function About({about}) {
+
   return (
     <section className="about" id="about">
       <div className="container">
         <div className="header">
           <h2 className="title">About</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            numquam maxime tempora quaerat sunt omnis corporis quia, mollitia
-            doloremque esse? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Illum numquam maxime tempora quaerat sunt omnis corporis quia,
-            mollitia doloremque esse?
-          </p>
+          <p>{about.description}</p>
         </div>
         <div className="container">
           <div className="img">
@@ -22,7 +17,7 @@ export default function About() {
           <div className="info">
             <div>
               <div>
-                <h3 className="title">Full Stack Developer</h3>
+                <h3 className="title">{about.postion}</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Nihil blanditiis fuga rerum consequatur odio impedit iusto
@@ -32,27 +27,27 @@ export default function About() {
               <div className="dtls">
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Birthday:</b> <span>20 -Jul</span>
+                  <b>Birthday:</b> <span>{about.birthday}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Age:</b> <span>24</span>
+                  <b>Age:</b> <span>{about.age}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Website:</b> <span>www.example.com</span>
+                  <b>Website:</b> <span>{about.website}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Degree:</b> <span>Bachelor</span>
+                  <b>Degree:</b> <span>{about.degree}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Phone:</b> <span> +962 79 076 1493</span>
+                  <b>Phone:</b> <span>{about.phone}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />
-                  <b>Email:</b> <span>belal.a.shakra@gmail.com</span>
+                  <b>Email:</b> <span>{about.email}</span>
                 </div>
                 <div>
                   <i className="bi bi-caret-right-fill" />

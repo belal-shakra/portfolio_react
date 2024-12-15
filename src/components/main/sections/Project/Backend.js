@@ -5,12 +5,22 @@ import Zenblog from "../../../../assets/imgs/zenblog.png";
 import VocabVault from "../../../../assets/imgs/VocabVault-lg.png";
 import Sensive from "../../../../assets/imgs/sensive.png";
 
-
 export default function Backend() {
+  // let cards = projects.projects.map(function (project) {
+  //   return (
+  //     <Card
+  //       title={project.title}
+  //       category={project.category}
+  //       link={project.link}
+  //     >
+  //       <img src={Airbnb} alt="airbnb" />
+  //     </Card>
+  //   );
+  // });
   return (
     <>
       <Title title="Back-End" />
-      
+
       <div className="card-container">
         <Card
           title="Graduation Project and Internship System"
